@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Lab4 – Exercise 2</title>
+
+</head>
+<body>
+	<h1>JavaScript Lab</h1>
+<script>
+// Write your JavaScript code here
+
+	/*function add(x,y){
+		return x+y
+	};
+
+	function sub(x,y){
+		return x-y
+	};
+*/
+	/*function add(x,y=0){
+		return x+y
+	};
+
+	function sub(x,y=0){
+		return x-y
+	};
+*/
+// implementing arrow functions
+	let add = (x,y=0) => x+y;
+	let sub = (x,y=0) => x-y;
+
+	console.log(add(5,3));
+	console.log(sub(5,3));
+
+	console.log(add(5));
+	console.log(sub(5));
+
+	let multiply = (x,y) => x*y;
+	console.log(multiply(5,3));
+
+	let divide = (x,y) => {
+
+		if (y==0){
+			console.log("error: division by zero attempted")}
+		else{
+			let z =x/y;
+			return z;}
+	};
+		
+	console.log(divide(6,3));
+
+// callback functions
+	function calculator(a, b, callback){
+		ans = callback(a,b);
+		return ans;
+	};
+
+	console.log(calculator(10,20,add));
+
+	console.log(calculator(10,20,multiply));
+</script>
+</body>
+</html>
