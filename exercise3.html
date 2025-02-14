@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab4 – Exercise 3</title>
+</head>
+<body>
+    <h1>JavaScript Lab</h1>
+    <script>
+        // Write your JavaScript code here
+
+        let classRoster = [ "Alice", "Tom", "Charlie", "Diana", "Evan"];    //step 2
+
+        ourString = classRoster.toString()
+        console.log(ourString);                      //step 3
+
+        console.log(classRoster);                   // step 4
+
+        let arrayNum = classRoster.push("Fiona", "Nancy");
+
+        console.log(arrayNum);                      // step 5
+
+        console.log(classRoster);                   // step 5
+
+        classRoster.shift();                        // step 6
+        console.log(classRoster);                   // step 7
+
+        let numStudents = classRoster.length;       
+        console.log(numStudents);                   // step 8
+
+// Objects with Nested Structures
+
+        let classInfo = {                           // step 1
+
+            className: "ENSF381: Full-Stack Web Development", 
+            instructor: "Dr. Smith",
+            students: classRoster,
+            details: {
+                semester: 'Winter',
+                year: 2025
+            },  
+
+        };
+
+        classInfo.schedule = ["Monday","Wednesday","Friday"];       //Step 2
+
+        classInfo.instructor = "Dr. Abdellatif";                       //step 3
+
+        console.log(classInfo.className);                           //step 4
+        console.log(classInfo.instructor);
+        console.log(classInfo.students);
+
+        console.log(classInfo.details.semester);                //step 5
+        console.log(classInfo);                                 //step 6
+
+       
+        let {className, students} = classInfo;              //step 7
+
+        console.log(className);                                 
+        console.log(students);
+
+        let {semester, year} = classInfo.details;           //step 8
+
+        console.log(semester);
+        console.log(year);
+
+        const [student1, student2, ...remainingStudents] = classRoster;     //step 9 
+        console.log(student1);                                                  //steps 10-11
+        console.log(student2);
+        console.log(remainingStudents);
+
+        
+    </script>
+</body>
+</html>

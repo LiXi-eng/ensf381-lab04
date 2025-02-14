@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab4 – Exercise 1</title>
+</head>
+<body>
+    <h1>JavaScript Lab</h1>
+
+    <script>
+        // Write your JavaScript code here
+
+        let x = 5;                  //step 1
+        let y = 10;
+        const z = 50;
+
+        //step 2
+        //let x = 50; 
+        //The console shows an error claiming x has already been declared in the scope
+
+        //step 3
+        //const z = 100; 
+        //The console shows and error claiming that z is already declared 
+
+
+        // String operations
+
+        string1 = "Hello, World!"               //step 1
+        string2 = "JavaScript is fun!"
+
+        console.log(string1.length);            //step 2
+        console.log(string1 +" "+ string2);         //step 3
+
+        newString2 = string2.replace("fun", "awesome");             //step 4
+        console.log(newString2);
+
+
+        // String Templates
+        name = "Alice"              //step 1
+        age = 25
+
+        formattedString = `My name is ${name} and I am ${age} years old`;       //step 2
+        console.log(formattedString);                                           //step 3
+      
+        
+        //Working with Dates
+        const current_date = new Date();                    //step 1
+        console.log(current_date);                          //step 2
+
+
+        //step 3
+        const year = current_date.getFullYear();
+        console.log(year);
+
+        const month = current_date.getMonth();
+        console.log(month+1);
+
+        const day = current_date.getDay();
+        console.log(day)
+
+    
+        const monthArray = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+        for (let i =0; i<monthArray.length; i++){
+            if (i+1 == day)
+                console.log(monthArray[i]);
+        }
+
+       
+
+    </script>
+
+</body>
+</html>
